@@ -24,7 +24,7 @@ public class RegistrationPage {
         WebElement emailField= driver.findElement(By.id("email_create"));
         WebElement createButton= driver.findElement(By.id("SubmitCreate"));
 
-        emailField.sendKeys("newMyMail@mail.com");
+        emailField.sendKeys("newMyMail"+Math.random()+"@mail.com");
         createButton.click();
 
         WebElement mrCheckBox=driver.findElement(By.id("id_gender1"));
